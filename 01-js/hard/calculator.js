@@ -20,6 +20,44 @@ class Calculator {
   constructor() {
     this.result = 0;
   }
+  add(number) {
+    this.result += number;
+  }
+  subtract(number) {
+    this.result -= number;
+  }
+  multiply(number) {
+    this.result *= number;
+  }
+  divide(number) {
+    if (number === 0) {
+      throw new Error("Cannot divide by zero");
+    }
+    this.result /= number;
+  }
+  clear() {
+    this.result = 0;
+  }
+  getResult() {
+    return this.result;
+  }
+  calculate(expression) {
+    if (/[^0-9\s+\-*/().]/.test(expression)) {
+      throw new Error();
+    }
+    expression = expression.replace(" ", "");
+    try {
+      let result = eval(expression);
+      if (isNaN(result) || !isFinite(result)) {
+        throw new Error();
+      }
+      this.result = result;
+    } catch (error) {
+      throw new Error();
+    }
+  }
+  getResult() {
+    return this.result;
+  }
 }
-
 module.exports = Calculator;
