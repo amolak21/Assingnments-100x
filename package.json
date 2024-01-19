@@ -1,11 +1,20 @@
 {
   "name": "assignments",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a Assignmnet repo for 100x Devs CoHort",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amolak21/Assingnments-100x.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/amolak21/Assingnments-100x/issues"
+  },
+  "homepage": "https://github.com/amolak21/Assingnments-100x#readme"
 }
